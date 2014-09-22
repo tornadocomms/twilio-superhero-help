@@ -31,16 +31,30 @@ def marvelhelp():
     # replace zzzzzzzzzzz with your Twilio No.
     twilio_no = "+zzzzzzzzzzz"
 
-    if "SPIDER-MAN" in body.upper():
-        message = client.messages.create(to=from_number, from_=twilio_no,body="Spidey says 'with Great Power comes Great Responsibility.'")    
+    if "SPIDE" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Spidey says 'with Great Power comes Great Responsibility.'")
+    elif "BANNER" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Bruce Banner says 'don't make me angry, you wouldn't like me when I'm angry.'")
+    elif "CAPTAIN AMERICA" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Cap says 'Believe in your country, but believe in yourself!'")
+    elif "HAWKEYE" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Hawkeye says 'I'm strictly a bow and arrow type.'")
     elif "HULK" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Hulk says 'SMASH!'")
     elif "GROOT" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Groot says 'I am Groot.'")
-    elif "LUKE CAGE" in body.upper():
+    elif "IRON" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Iron-Man says'Patriotism doesn't automatically equal conservatism.'")
+    elif "CAGE" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Luke Cage says 'Sweet Christmas!'")
+    elif "THOR" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Thor says 'Stay thy hand! Tis the God of Thunder who doth command thee!'")
+    elif "WIDOW" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Black Widow says '...don't let the door hit you in the back on the way out!'")
+    elif "WOLVERINE" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Wolverine says 'I'm the best there is at what I do, but what I do best isn't very nice!'")
     else:
-        message = client.messages.create(to=from_number, from_=twilio_no,body="Your chosen Hero is unavailable, please try again or visit https://github.com/mickstevens/twilio-superhero-help to add a Hero of your choice.")
+        message = client.messages.create(to=from_number, from_=twilio_no,body="Your chosen Hero is unavailable, please try again or visit https://github.com/mickstevens/twilio-superhero-help to add a Hero of your choice.")    
     
     return str(resp) 
 
