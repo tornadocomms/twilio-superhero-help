@@ -35,6 +35,8 @@ def marvelhelp():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Spidey says 'with Great Power comes Great Responsibility.'")
     elif "BANNER" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Bruce Banner says 'don't make me angry, you wouldn't like me when I'm angry.'")
+    elif "BEAST" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="The Beast says 'Oh my stars and garters.'")
     elif "CAPTAIN AMERICA" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Cap says 'Believe in your country, but believe in yourself!'")
     elif "HAWKEYE" in body.upper():
