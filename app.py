@@ -47,11 +47,12 @@ def marvelhelp():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Iron-Man says'Patriotism doesn't automatically equal conservatism.'")
     elif "CAGE" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Luke Cage says 'Sweet Christmas!'")
+    elif "THING" in body.upper():
+        message = client.messages.create(to=from_number, from_=twilio_no,body="The Thing says 'It's Clobberin' Time!'")
     elif "THOR" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Thor says 'Stay thy hand! Tis the God of Thunder who doth command thee!'")
     elif "TORCH" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="The Human Torch says 'Flame On!'")
-
     elif "WIDOW" in body.upper():
         message = client.messages.create(to=from_number, from_=twilio_no,body="Black Widow says '...don't let the door hit you in the back on the way out!'")
     elif "WOLVERINE" in body.upper():
